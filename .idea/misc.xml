@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Mario/AndroidStudioProjects/TheHillReloded/app/src/main/res/layout/activity_sign_in.xml" value="0.5" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.1" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/layout/activity_game_over.xml" value="0.2" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/layout/activity_main.xml" value="0.2703583061889251" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/layout/activity_main2.xml" value="0.13802083333333334" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/layout/activity_sign_in.xml" value="0.13802083333333334" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/layout/fragment_game_over.xml" value="0.4" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/layout/fragment_menu_pausa.xml" value="0.25" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/layout/fragment_mission.xml" value="0.25" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/layout/fragment_second.xml" value="0.25" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/layout/fragment_shop.xml" value="0.536" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/layout/fragment_upgrade_acciaio.xml" value="0.6" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/layout/fragment_upgrade_alluminio.xml" value="0.6" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/layout/fragment_upgrade_carta.xml" value="0.536" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/layout/fragment_upgrade_inceneritore.xml" value="0.72" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/layout/fragment_upgrade_plastica.xml" value="0.72" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/layout/fragment_upgrade_tecnologia.xml" value="0.72" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/layout/fragment_upgrade_vetro.xml" value="0.536" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/ColorsGroup2021/app/src/main/res/layout/lay.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/utente/Desktop/ColorsGroup2021-origin/app/src/main/res/layout/activity_main.xml" value="0.12409420289855072" />
+        <entry key="..\:/Users/utente/Desktop/ColorsGroup2021-origin/app/src/main/res/layout/activity_main2.xml" value="0.12409420289855072" />
+        <entry key="..\:/Users/utente/Desktop/ColorsGroup2021-origin/app/src/main/res/layout/activity_menu.xml" value="0.33" />
+        <entry key="..\:/Users/utente/Desktop/ColorsGroup2021-origin/app/src/main/res/layout/custom_list.xml" value="0.12409420289855072" />
+        <entry key="..\:/Users/utente/Desktop/ColorsGroup2021-origin/app/src/main/res/layout/customlayout.xml" value="0.22" />
+        <entry key="..\:/Users/utente/Desktop/ColorsGroup2021-origin/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/utente/Desktop/ColorsGroup2021-origin/app/src/main/res/layout/fragment_search.xml" value="0.12409420289855072" />
+        <entry key="..\:/Users/utente/Desktop/ColorsGroup2021-origin/app/src/main/res/layout/fragment_setting.xml" value="0.12409420289855072" />
+        <entry key="..\:/Users/utente/Desktop/ColorsGroup2021-origin/app/src/main/res/menu/bottom_navigation.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

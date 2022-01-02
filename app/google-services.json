@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "593443217524",
+    "project_id": "thehillreloded",
+    "storage_bucket": "thehillreloded.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593443217524:android:bbccd29f151dcb717eb121",
+        "android_client_info": {
+          "package_name": "it.uniba.sms2122.thehillreloded"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593443217524-slodkq7dhmb67lpdn5g023897hs4co5u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPmKk2y2f7FQBY3SfczslgT9U2e3w0AzI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593443217524-slodkq7dhmb67lpdn5g023897hs4co5u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

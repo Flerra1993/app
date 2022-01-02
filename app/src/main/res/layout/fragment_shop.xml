@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shopFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#51ECC0"
+    tools:context=".ShopFragment">
+
+    <ImageView
+        android:id="@+id/puntiSoleTecnologia"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole24"
+        app:layout_constraintStart_toEndOf="@+id/costoTecnologiaTxt"
+        app:layout_constraintTop_toBottomOf="@+id/buyTecnologiaBtm"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/puntiSolePlastica"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole24"
+        app:layout_constraintStart_toEndOf="@+id/costoPlasticaTxt"
+        app:layout_constraintTop_toBottomOf="@+id/buyPlasticaBtn"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/puntiSoleAcciaio"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole24"
+        app:layout_constraintStart_toEndOf="@+id/costoAcciaioTxt"
+        app:layout_constraintTop_toBottomOf="@+id/buyAcciaioBtn"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/puntiSoleAlluminio"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole24"
+        app:layout_constraintStart_toEndOf="@+id/costoAlluminioTxt"
+        app:layout_constraintTop_toBottomOf="@+id/buyAlluminioBtn"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/buyCartaBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#51ECC0"
+        android:contentDescription="@string/compra_unita_riciclaggio_carta"
+        android:onClick="setUnitaRiciclaggioCarta"
+        android:src="@drawable/bottonecarta48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/buyAlluminioBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#51ECC0"
+        android:contentDescription="@string/compra_unita_riciclaggio_alluminio"
+        android:onClick="setUnitaRiciclaggioAlluminio"
+        android:src="@drawable/bottonelattina48"
+        app:layout_constraintStart_toEndOf="@+id/buyCartaBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/buyAcciaioBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#51ECC0"
+        android:contentDescription="@string/compra_unita_riciclaggio_acciaio"
+        android:onClick="setUnitaRiciclaggioAcciaio"
+        android:src="@drawable/bottoneacciaio48"
+        app:layout_constraintStart_toEndOf="@+id/buyAlluminioBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/buyPlasticaBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#51ECC0"
+        android:contentDescription="@string/compra_unita_riciclaggio_plastica"
+        android:onClick="setUnitaRiciclaggioPlastica"
+        android:src="@drawable/bottoneplastica48"
+        app:layout_constraintStart_toEndOf="@+id/buyAcciaioBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/buyTecnologiaBtm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#51ECC0"
+        android:contentDescription="@string/compra_unita_riciclaggio_tecnologia"
+        android:onClick="setUnitaRiciclaggioTecnologia"
+        android:src="@drawable/bottonetecnologia48"
+        app:layout_constraintStart_toEndOf="@+id/buyPlasticaBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/costoCartaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/costo_12"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buyCartaBtn" />
+
+    <TextView
+        android:id="@+id/costoAlluminioTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:text="@string/costo_25"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buyAlluminioBtn" />
+
+    <ImageView
+        android:id="@+id/puntiSoleCarta"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole24"
+        app:layout_constraintStart_toEndOf="@+id/costoCartaTxt"
+        app:layout_constraintTop_toBottomOf="@+id/buyCartaBtn"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/costoAcciaioTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="232dp"
+        android:text="@string/costo_30"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buyAcciaioBtn" />
+
+    <TextView
+        android:id="@+id/costoPlasticaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="335dp"
+        android:text="@string/costo_35"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buyPlasticaBtn" />
+
+    <TextView
+        android:id="@+id/costoTecnologiaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="438dp"
+        android:text="@string/costo_40"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buyTecnologiaBtm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

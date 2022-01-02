@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11CCD3"
+    tools:context=".UpgradeTecnologiaFragment">
+
+
+    <ImageView
+        android:id="@+id/unitaRicicloTecnologiaImm"
+        android:layout_width="96dp"
+        android:layout_height="93dp"
+        android:contentDescription="@string/immagine_unita_riciclo_tecnologia"
+        android:src="@drawable/industria_tecnologica96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/infoUnitaRicicloTecnologiaBtn"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/informazioni_unita_riciclo_tecnologia"
+        android:src="@drawable/icona_info"
+        app:layout_constraintStart_toEndOf="@+id/unitaRicicloTecnologiaImm"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tipoUnitaRicicloTecnologiaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/tipo_unita_tecnologia"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lvlUpgradeTecnologiaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/liv_upgrade"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipoUnitaRicicloTecnologiaTxt" />
+
+    <TextView
+        android:id="@+id/lvlUsuraTecnologiaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/liv_usura"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUpgradeTecnologiaTxt" />
+
+    <TextView
+        android:id="@+id/totRiciclatiTecnologiaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/totale_riciclati"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUsuraTecnologiaTxt" />
+
+    <TextView
+        android:id="@+id/lvlUpgradeTecnologiaNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/_1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lvlUpgradeTecnologiaTxt"
+        app:layout_constraintTop_toBottomOf="@+id/tipoUnitaRicicloTecnologiaTxt" />
+
+    <TextView
+        android:id="@+id/lvlUsuraTecnologiaNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/_0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lvlUsuraTecnologiaTxt"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUpgradeTecnologiaTxt" />
+
+    <TextView
+        android:id="@+id/lvlUsuraMaxTecnologiaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/_24"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lvlUsuraTecnologiaNumeroTxt"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUpgradeTecnologiaTxt" />
+
+    <TextView
+        android:id="@+id/totRiciclatiTecnologiaNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/_0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/totRiciclatiTecnologiaTxt"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUsuraTecnologiaTxt"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/aumentaLvlUnitaTecnologiaBtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="122dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#E53935"
+        android:backgroundTintMode="add"
+        android:text="@string/upgrade_unit"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/totRiciclatiTecnologiaNumeroTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/costoUpgradeTecnologiaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/costo_4"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lvlUpgradeTecnologiaNumeroTxt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/puntiRiciclaggioTecnologiaImm"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="25dp"
+        android:background="#F6F3F3"
+        android:contentDescription="@string/punti_riciclaggio"
+        android:src="@drawable/pala48"
+        app:layout_constraintStart_toEndOf="@+id/costoUpgradeTecnologiaTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+
+    <ImageButton
+        android:id="@+id/ricicloTecnologia1Btn"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#4A4040"
+        android:clickable="true"
+        android:contentDescription="@string/crea_nuovo_oggetto_tecnologia_1"
+        android:src="@drawable/hardware_tecnologia_riciclo"
+        app:layout_constraintStart_toEndOf="@+id/aumentaLvlUnitaTecnologiaBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/ricicloTecnologia2Btn"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#4A4040"
+        android:contentDescription="@string/crea_nuovo_oggetto_tecnologia_2"
+        android:src="@drawable/smartphone_tecnologia_riciclo"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloTecnologia1Btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/ricicloTecnologia3Btn"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#4A4040"
+        android:contentDescription="@string/crea_nuovo_oggetto_tecnologia_3"
+        android:src="@drawable/notebook_tecnologia_riciclo"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloTecnologia2Btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/costoOggettoTecnologia2Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/costo_4"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloTecnologia1Btn"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloTecnologia2Btn"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/costoOggettoTecnologia3Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/costo_7"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloTecnologia2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloTecnologia3Btn"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/ricavoRicicloOggettoTecnologia1Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:text="@string/ricavo_2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/aumentaLvlUnitaTecnologiaBtn"
+        app:layout_constraintTop_toBottomOf="@+id/costoOggettoTecnologia1Txt" />
+
+    <TextView
+        android:id="@+id/ricavoRicicloOggettoTecnologia2Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:text="@string/ricavo_4"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloTecnologia1Btn"
+        app:layout_constraintTop_toBottomOf="@+id/costoOggettoTecnologia2Txt"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/ricavoRicicloOggettoTecnologia3Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:text="@string/ricavo_7"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloTecnologia2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/costoOggettoTecnologia3Txt"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/puntiSoleRicavoTecnologia1Imm"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole24"
+        app:layout_constraintStart_toEndOf="@+id/ricavoRicicloOggettoTecnologia1Txt"
+        app:layout_constraintTop_toBottomOf="@+id/puntiRiciclaggiTecnologiaImm3"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/puntiSoleRicavoTecnologia2Imm"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole24"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricavoRicicloOggettoTecnologia2Txt"
+        app:layout_constraintTop_toBottomOf="@+id/puntiRiciclaggiTecnologiaImm2"
+        tools:ignore="ImageContrastCheck"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/puntiSoleRicavoTecnologia3Imm"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="1dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole24"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricavoRicicloOggettoTecnologia3Txt"
+        app:layout_constraintTop_toBottomOf="@+id/puntiRiciclaggiTecnologiaImm4"
+        tools:ignore="ImageContrastCheck"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/numeroOggettiCreatiTecnologia1Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/n_0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ricicloTecnologia1Btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numeroOggettiCreatiTecnologia2Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/n_0"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloTecnologia2Btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/numeroOggettiCreatiTecnologia3Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/n_0"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloTecnologia3Btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/informazioniCreazioneOggettoTecnologia1Btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#11CCD3"
+        android:contentDescription="@string/informazioni_creazione_nuovo_oggetto_tecnologia_1"
+        android:src="@drawable/icona_info"
+        app:layout_constraintStart_toEndOf="@+id/ricicloTecnologia1Btn"
+        app:layout_constraintTop_toBottomOf="@+id/numeroOggettiCreatiTecnologia1Txt" />
+
+    <ImageView
+        android:id="@+id/puntiRiciclaggiTecnologiaImm3"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="5dp"
+        android:background="#F6F3F3"
+        android:contentDescription="@string/punti_riciclaggio"
+        android:src="@drawable/pala48"
+        app:layout_constraintStart_toEndOf="@+id/costoOggettoTecnologia1Txt"
+        app:layout_constraintTop_toBottomOf="@+id/informazioniCreazioneOggettoTecnologia1Btn"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/puntiRiciclaggiTecnologiaImm4"
+        android:layout_width="17dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="4dp"
+        android:background="#F6F3F3"
+        android:contentDescription="@string/punti_riciclaggio"
+        android:src="@drawable/pala48"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/costoOggettoTecnologia3Txt"
+        app:layout_constraintTop_toBottomOf="@+id/informazioniCreazioneOggettoTecnologia3Btn"
+        tools:ignore="ImageContrastCheck"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/puntiRiciclaggiTecnologiaImm2"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="2dp"
+        android:background="#F6F3F3"
+        android:contentDescription="@string/punti_riciclaggio"
+        android:src="@drawable/pala48"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/costoOggettoTecnologia2Txt"
+        app:layout_constraintTop_toTopOf="@+id/costoOggettoTecnologia2Txt"
+        tools:ignore="ImageContrastCheck"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/costoOggettoTecnologia1Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/costo_2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/aumentaLvlUnitaTecnologiaBtn"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloTecnologia1Btn" />
+
+    <ImageButton
+        android:id="@+id/informazioniCreazioneOggettoTecnologia2Btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#11CCD3"
+        android:contentDescription="@string/informazioni_creazione_nuovo_oggetto_tecnologia_2"
+        android:src="@drawable/icona_info"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloTecnologia2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/numeroOggettiCreatiTecnologia2Txt"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/informazioniCreazioneOggettoTecnologia3Btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#11CCD3"
+        android:contentDescription="@string/informazioni_creazione_nuovo_oggetto_tecnologia_3"
+        android:src="@drawable/icona_info"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloTecnologia3Btn"
+        app:layout_constraintTop_toBottomOf="@+id/numeroOggettiCreatiTecnologia3Txt"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tempoRiciclaggioTecnologiaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totRiciclatiTecnologiaTxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

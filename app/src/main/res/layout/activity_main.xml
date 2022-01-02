@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:id="@+id/Main_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/gameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:foregroundGravity="top|left"
+        android:onClick="tapToContinue"
+        android:soundEffectsEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/upgradeInceneritoreBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#00B84646"
+            android:contentDescription="@string/apre_menu_upgrade_inceneritore"
+            android:onClick="getUpgradeInceneritore"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icona_upgrade"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,DuplicateClickableBoundsCheck"
+            tools:visibility="visible" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/containerShopInfoUnita"
+            android:name="it.uniba.sms2122.thehillreloded.ShopFragment"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/upgradeVetroBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#00568F06"
+            android:contentDescription="@string/apre_menu_upgrade_unita_riciclo_vetro"
+            android:onClick="getUpgradeVetro"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icona_upgrade"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateClickableBoundsCheck,ImageContrastCheck"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/upgradeCartaBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#00603131"
+            android:contentDescription="@string/apre_menu_upgrade_unita_riciclo_carta"
+            android:onClick="getUpgradeCarta"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icona_upgrade"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/upgradeAcciaioBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#00B84646"
+            android:contentDescription="@string/apre_menu_upgrade_unita_riciclo_acciaio"
+            android:onClick="getUpgradeAcciaio"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icona_upgrade"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/upgradePlasticaBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#00A16767"
+            android:contentDescription="@string/apre_menu_upgrade_unita_riciclo_plastica"
+            android:onClick="getUpgradePlastica"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icona_upgrade"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/upgradeAlluminioBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/apre_menu_upgrade_unita_riciclo_alluminio"
+            android:onClick="getUpgradeAlluminio"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icona_upgrade"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/upgradeTecnologiaBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/apre_menu_upgrade_unita_riciclo_tecnologia"
+            android:onClick="getUpgradeTecnologia"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icona_upgrade"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/closeUpgradeMenuBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/chiude_il_menu_di_upgrade"
+            android:onClick="closeUpgradeMenu"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/containerShopInfoUnita"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/icona_close2"
+            tools:ignore="DuplicateClickableBoundsCheck,DuplicateSpeakableTextCheck"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/closeShopBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/chiude_il_menu_di_upgrade"
+            android:onClick="closeShop"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/containerShopInfoUnita"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/icona_close2"
+            tools:visibility="visible" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/containerResize"
+            android:name="it.uniba.sms2122.thehillreloded.ResizeFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addUnitPos1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contentDescription="@string/agiiungi_unita"
+            android:onClick="addUnit1"
+            android:visibility="gone"
+            app:backgroundTint="#6A6666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,DuplicateSpeakableTextCheck,DuplicateClickableBoundsCheck"
+            tools:visibility="visible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addUnitPos2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contentDescription="@string/agiiungi_unita"
+            android:onClick="addUnit2"
+            android:visibility="gone"
+            app:backgroundTint="#6A6666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+            tools:visibility="visible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addUnitPos4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contentDescription="@string/agiiungi_unita"
+            android:onClick="addUnit4"
+            android:visibility="gone"
+            app:backgroundTint="#6A6666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+            tools:visibility="visible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addUnitPos3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contentDescription="@string/agiiungi_unita"
+            android:onClick="addUnit3"
+            android:visibility="gone"
+            app:backgroundTint="#6A6666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+            tools:visibility="visible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addUnitPos5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contentDescription="@string/agiiungi_unita"
+            android:onClick="addUnit5"
+            android:visibility="gone"
+            app:backgroundTint="#6A6666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+            tools:visibility="invisible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/missionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:contentDescription="@string/apri_menu_missioni"
+            android:onClick="openMissionMenu"
+            android:visibility="gone"
+            app:backgroundTint="#CFAF22"
+            app:layout_constraintBottom_toTopOf="@+id/containerShopInfoUnita"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/missioni"
+            tools:visibility="invisible" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/missionContainer"
+            android:name="it.uniba.sms2122.thehillreloded.MissionFragment"
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:foregroundGravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/backMenuContainer"
+            android:name="it.uniba.sms2122.thehillreloded.GameOverFragment"
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:foregroundGravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/pauseContainer"
+            android:name="it.uniba.sms2122.thehillreloded.MenuPausaFragment"
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:foregroundGravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/menuBtn"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#055105"
+            android:contentDescription="@string/apre_menu_pausa_gioco"
+            android:onClick="openPauseMenu"
+            android:rotation="90"
+            android:rotationY="-2"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icona_menu"
+            tools:ignore="TouchTargetSizeCheck,ImageContrastCheck"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
