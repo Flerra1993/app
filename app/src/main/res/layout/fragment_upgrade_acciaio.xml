@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11CCD3"
+    tools:context=".UpgradeAcciaioFragment">
+
+    <ImageView
+        android:id="@+id/unitaRicicloAcciaioImm"
+        android:layout_width="96dp"
+        android:layout_height="93dp"
+        android:contentDescription="@string/immagine_unita_riciclo_acciaio"
+        android:src="@drawable/industria_acciaio_96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/infoUnitaRicicloAcciaioBtn"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/informazioni_unita_riciclo_acciaio"
+        android:src="@drawable/icona_info"
+        app:layout_constraintStart_toEndOf="@+id/unitaRicicloAcciaioImm"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tipoUnitaRicicloAcciaioTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/tipo_unita_acciaio"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lvlUpgradeAcciaioTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/liv_upgrade"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipoUnitaRicicloAcciaioTxt" />
+
+    <TextView
+        android:id="@+id/lvlUsuraAcciaioTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/liv_usura"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUpgradeAcciaioTxt" />
+
+    <TextView
+        android:id="@+id/totRiciclatiAcciaioTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/totale_riciclati"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUsuraAcciaioTxt" />
+
+    <TextView
+        android:id="@+id/lvlUpgradeAcciaioNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/_1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lvlUpgradeAcciaioTxt"
+        app:layout_constraintTop_toBottomOf="@+id/tipoUnitaRicicloAcciaioTxt" />
+
+    <TextView
+        android:id="@+id/lvlUsuraAcciaioNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/_0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lvlUsuraAcciaioTxt"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUpgradeAcciaioTxt" />
+
+    <TextView
+        android:id="@+id/lvlUsuraMaxAcciaioTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/_24"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lvlUsuraAcciaioNumeroTxt"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUpgradeAcciaioTxt" />
+
+    <TextView
+        android:id="@+id/totRiciclatiAcciaioNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/_0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/totRiciclatiAcciaioTxt"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUsuraAcciaioTxt"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/aumentaLvlUnitaAcciaioBtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="122dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#E53935"
+        android:backgroundTintMode="add"
+        android:text="@string/upgrade_unit"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/totRiciclatiAcciaioTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/costoUpgradeAcciaioTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/costo_4"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lvlUpgradeAcciaioNumeroTxt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/puntiRiciclaggioAcciaioImm"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="25dp"
+        android:background="#F6F3F3"
+        android:contentDescription="@string/punti_riciclaggio"
+        android:src="@drawable/pala48"
+        app:layout_constraintStart_toEndOf="@+id/costoUpgradeAcciaioTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/puntiRiciclaggiAcciaioImm3"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="2dp"
+        android:background="#F6F3F3"
+        android:contentDescription="@string/punti_riciclaggio"
+        android:src="@drawable/pala48"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/costoOggettoAcciaio2Txt"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloAcciaio2Btn"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/puntiRiciclaggiAcciaioImm4"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="2dp"
+        android:background="#F6F3F3"
+        android:contentDescription="@string/punti_riciclaggio"
+        android:src="@drawable/pala48"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/costoOggettoAcciaio3Txt"
+        app:layout_constraintTop_toTopOf="@+id/costoOggettoAcciaio3Txt"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/puntiRiciclaggiAcciaioImm2"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="2dp"
+        android:background="#F6F3F3"
+        android:contentDescription="@string/punti_riciclaggio"
+        android:src="@drawable/pala48"
+        app:layout_constraintStart_toEndOf="@+id/costoOggettoAcciaio1Txt"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloAcciaio1Btn"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/ricicloAcciaio1Btn"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#4A4040"
+        android:contentDescription="@string/crea_nuovo_oogetto_acciaio_1"
+        android:src="@drawable/chiave_inglese_acciaio_riciclo"
+        app:layout_constraintStart_toEndOf="@+id/aumentaLvlUnitaAcciaioBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/ricicloAcciaio2Btn"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#4A4040"
+        android:contentDescription="@string/crea_nuovo_oggetto_acciaio_2"
+        android:src="@drawable/lastra_acciaio_riciclo"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloAcciaio1Btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/ricicloAcciaio3Btn"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#4A4040"
+        android:contentDescription="@string/crea_nuovo_oggetto_acciaio_3"
+        android:src="@drawable/panchina_acciaio_riciclo"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloAcciaio2Btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/costoOggettoAcciaio1Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/costo_3"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/aumentaLvlUnitaAcciaioBtn"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloAcciaio1Btn" />
+
+    <TextView
+        android:id="@+id/costoOggettoAcciaio2Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/costo_5"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloAcciaio1Btn"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloAcciaio2Btn"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/costoOggettoAcciaio3Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/costo_8"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloAcciaio2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloAcciaio3Btn"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/ricavoRicicloOggettoAcciaio1Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:text="@string/ricavo_3"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/aumentaLvlUnitaAcciaioBtn"
+        app:layout_constraintTop_toBottomOf="@+id/costoOggettoAcciaio1Txt" />
+
+    <TextView
+        android:id="@+id/ricavoRicicloOggettoAcciaio2Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:text="@string/ricavo_5"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloAcciaio1Btn"
+        app:layout_constraintTop_toBottomOf="@+id/costoOggettoAcciaio2Txt"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/ricavoRicicloOggettoAcciaio3Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:text="@string/ricavo_8"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloAcciaio2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/costoOggettoAcciaio3Txt"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/puntiSoleRicavoAcciaio1Imm"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole24"
+        app:layout_constraintStart_toEndOf="@+id/ricavoRicicloOggettoAcciaio1Txt"
+        app:layout_constraintTop_toBottomOf="@+id/puntiRiciclaggiAcciaioImm2"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/puntiSoleRicavoAcciaio2Imm"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole24"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricavoRicicloOggettoAcciaio2Txt"
+        app:layout_constraintTop_toBottomOf="@+id/puntiRiciclaggiAcciaioImm3"
+        tools:ignore="ImageContrastCheck"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/puntiSoleRicavoAcciaio3Imm"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="1dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole24"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricavoRicicloOggettoAcciaio3Txt"
+        app:layout_constraintTop_toBottomOf="@+id/puntiRiciclaggiAcciaioImm4"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/numeroOggettiCreatiAcciaio1Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/n_0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ricicloAcciaio1Btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numeroOggettiCreatiAcciaio2Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/n_0"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloAcciaio2Btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numeroOggettiCreatiAcciaio3Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/n_0"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloAcciaio3Btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/informazioniCreazioneOggettoAcciaio1Btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#11CCD3"
+        android:contentDescription="@string/informazioni_creazione_nuovo_oggetto_acciaio_1"
+        android:src="@drawable/icona_info"
+        app:layout_constraintStart_toEndOf="@+id/ricicloAcciaio1Btn"
+        app:layout_constraintTop_toBottomOf="@+id/numeroOggettiCreatiAcciaio1Txt" />
+
+    <ImageButton
+        android:id="@+id/informazioniCreazioneOggettoAcciaio2Btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#11CCD3"
+        android:contentDescription="@string/informazioni_creazione_nuovo_oggetto_acciaio_2"
+        android:src="@drawable/icona_info"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloAcciaio2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/numeroOggettiCreatiAcciaio2Txt" />
+
+    <ImageButton
+        android:id="@+id/informazioniCreazioneOggettoAcciaio3Btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#11CCD3"
+        android:contentDescription="@string/informazioni_creazione_nuova_acciaio_3"
+        android:src="@drawable/icona_info"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloAcciaio3Btn"
+        app:layout_constraintTop_toBottomOf="@+id/numeroOggettiCreatiAcciaio3Txt" />
+
+    <TextView
+        android:id="@+id/tempoRiciclaggioAcciaioTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totRiciclatiAcciaioTxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

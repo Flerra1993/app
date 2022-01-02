@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11CCD3"
+    tools:context=".UpgradeVetroFragment">
+
+    <ImageView
+        android:id="@+id/puntiRiciclaggiVetroImm3"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="2dp"
+        android:background="#F6F3F3"
+        android:contentDescription="@string/punti_riciclaggio"
+        android:src="@drawable/pala48"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/costoOggettoVetro2Txt"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloVetro2Btn"
+        tools:ignore="ImageContrastCheck"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/puntiRiciclaggiVetroImm4"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="2dp"
+        android:background="#F6F3F3"
+        android:contentDescription="@string/punti_riciclaggio"
+        android:src="@drawable/pala48"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/costoOggettoVetro3Txt"
+        app:layout_constraintTop_toTopOf="@+id/costoOggettoVetro3Txt"
+        tools:ignore="ImageContrastCheck"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/puntiRiciclaggiVetroImm2"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="2dp"
+        android:background="#F6F3F3"
+        android:contentDescription="@string/punti_riciclaggio"
+        android:src="@drawable/pala48"
+        app:layout_constraintStart_toEndOf="@+id/costoOggettoVetro1Txt"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloVetro1Btn"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/unitaRicicloVetroImm"
+        android:layout_width="96dp"
+        android:layout_height="93dp"
+        android:contentDescription="@string/immagine_unita_riciclo_vetro"
+        android:src="@drawable/industria_vetro96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/infoUnitaRicicloVetroBtn"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/informazioni_unita_riciclo_vetro"
+        android:src="@drawable/icona_info"
+        app:layout_constraintStart_toEndOf="@+id/unitaRicicloVetroImm"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tipoUnitaRicicloVetroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/tipo_unita_vetro"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lvlUpgradeVetroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/liv_upgrade"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipoUnitaRicicloVetroTxt" />
+
+    <TextView
+        android:id="@+id/lvlUsuraVetroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/liv_usura"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUpgradeVetroTxt" />
+
+    <TextView
+        android:id="@+id/totRiciclatiVetroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/totale_riciclati"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUsuraVetroTxt" />
+
+    <TextView
+        android:id="@+id/lvlUpgradeVetroNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/_1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lvlUpgradeVetroTxt"
+        app:layout_constraintTop_toBottomOf="@+id/tipoUnitaRicicloVetroTxt" />
+
+    <TextView
+        android:id="@+id/lvlUsuraNumeroVetroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/_0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lvlUsuraVetroTxt"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUpgradeVetroTxt" />
+
+    <TextView
+        android:id="@+id/lvlUsuraMaxVetroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/_24"
+        android:textColor="#352D2D"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lvlUsuraNumeroVetroTxt"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUpgradeVetroTxt" />
+
+    <TextView
+        android:id="@+id/totRiciclatiVetroNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/_0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/totRiciclatiVetroTxt"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUsuraVetroTxt"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/aumentaLvlUnitaVetroBtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="122dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#E53935"
+        android:backgroundTintMode="add"
+        android:text="@string/upgrade_unit"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/totRiciclatiVetroTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/costoUpgradeVetroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/costo_4"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/aumentaLvlUnitaVetroBtn"
+        app:layout_constraintStart_toEndOf="@+id/lvlUpgradeVetroNumeroTxt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ricicloVetro1Btn"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#4A4040"
+        android:contentDescription="@string/crea_nuovo_oggetto_vetro_1"
+        android:src="@drawable/bottiglia_vetro_riciclo"
+        app:layout_constraintStart_toEndOf="@+id/aumentaLvlUnitaVetroBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/ricicloVetro2Btn"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#4A4040"
+        android:contentDescription="@string/crea_nuovo_oggetto_vetro_2"
+        android:src="@drawable/vaso_vetro_riciclo"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloVetro1Btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/ricicloVetro3Btn"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#4A4040"
+        android:contentDescription="@string/crea_nuovo_oggetto_vetro_3"
+        android:src="@drawable/specchio_vetro_riciclo"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloVetro2Btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/costoOggettoVetro1Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/costo_2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/aumentaLvlUnitaVetroBtn"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloVetro1Btn" />
+
+    <TextView
+        android:id="@+id/costoOggettoVetro2Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/costo_4"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloVetro1Btn"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloVetro2Btn"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/costoOggettoVetro3Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/costo_7"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloVetro2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloVetro3Btn"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/ricavoRicicloOggettoVetro1Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:text="@string/ricavo_1"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/aumentaLvlUnitaVetroBtn"
+        app:layout_constraintTop_toBottomOf="@+id/costoOggettoVetro1Txt" />
+
+    <TextView
+        android:id="@+id/ricavoRicicloOggettoVetro2Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:text="@string/ricavo_3"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloVetro1Btn"
+        app:layout_constraintTop_toBottomOf="@+id/costoOggettoVetro2Txt"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/ricavoRicicloOggettoVetro3Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:text="@string/ricavo_6"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloVetro2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/costoOggettoVetro3Txt"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/puntiSoleRicavoVetro1Imm"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole24"
+        app:layout_constraintStart_toEndOf="@+id/ricavoRicicloOggettoVetro1Txt"
+        app:layout_constraintTop_toBottomOf="@+id/puntiRiciclaggiVetroImm2"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/puntiSoleRicavoVetro2Imm"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole24"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricavoRicicloOggettoVetro2Txt"
+        app:layout_constraintTop_toBottomOf="@+id/puntiRiciclaggiVetroImm3"
+        tools:ignore="ImageContrastCheck"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/puntiSoleRicavoVetro3Imm"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="1dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole24"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricavoRicicloOggettoVetro3Txt"
+        app:layout_constraintTop_toBottomOf="@+id/puntiRiciclaggiVetroImm4"
+        tools:ignore="ImageContrastCheck"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/numeroOggettiCreatiVetro1Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/n_0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ricicloVetro1Btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numeroOggettiCreatiVetro2Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/n_0"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloVetro2Btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/numeroOggettiCreatiVetro2Txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/n_0"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloVetro3Btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/informazioniCreazioneOggettoVetro1Btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#11CCD3"
+        android:contentDescription="@string/informazioni_creazione_nuovo_oggetto_vetro_1"
+        android:src="@drawable/icona_info"
+        app:layout_constraintStart_toEndOf="@+id/ricicloVetro1Btn"
+        app:layout_constraintTop_toBottomOf="@+id/numeroOggettiCreatiVetro1Txt" />
+
+    <ImageButton
+        android:id="@+id/informazioniCreazioneOggettoVetro2Btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#11CCD3"
+        android:contentDescription="@string/informazioni_creazione_nuovo_oggetto_vetro_2"
+        android:src="@drawable/icona_info"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloVetro2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/numeroOggettiCreatiVetro2Txt"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/informazioniCreazioneOggettoVetro3Btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#11CCD3"
+        android:contentDescription="@string/informazioni_creazione_nuovo_oggetto_vetro_3"
+        android:src="@drawable/icona_info"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloVetro3Btn"
+        app:layout_constraintTop_toBottomOf="@+id/numeroOggettiCreatiVetro2Txt2"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/puntiRiciclaggioVetroImm"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="25dp"
+        android:background="#F6F3F3"
+        android:contentDescription="@string/punti_riciclaggio"
+        android:src="@drawable/pala48"
+        app:layout_constraintStart_toEndOf="@+id/costoUpgradeVetroTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tempoRiciclaggioVetroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totRiciclatiVetroTxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

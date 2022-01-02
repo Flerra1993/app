@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11CCD3"
+    tools:context=".UpgradeInceneritoreFragment" >
+
+    <ImageView
+        android:id="@+id/inceneritoreImm"
+        android:layout_width="96dp"
+        android:layout_height="93dp"
+        android:contentDescription="@string/immagine_inceneritore"
+        android:src="@drawable/inceneritore96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/infoInceneritoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:backgroundTint="#11CCD3"
+        android:contentDescription="@string/informazioni_inceneritore"
+        android:src="@drawable/icona_info"
+        app:layout_constraintStart_toEndOf="@+id/inceneritoreImm"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tipoUnitaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/tipo_unita_inceneritore"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/infoInceneritoreButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/usatoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/usato"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/infoInceneritoreButton"
+        app:layout_constraintTop_toBottomOf="@+id/tipoUnitaTxt" />
+
+    <TextView
+        android:id="@+id/usatoNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/usatoTxt"
+        app:layout_constraintTop_toBottomOf="@+id/tipoUnitaTxt" />
+
+    <TextView
+        android:id="@+id/costoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/costo_2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/infoInceneritoreButton"
+        app:layout_constraintTop_toBottomOf="@+id/usatoTxt" />
+
+    <Button
+        android:id="@+id/buttonPowerUpInceneritore"
+        android:layout_width="122dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/power_up"
+        app:layout_constraintStart_toEndOf="@+id/tipoUnitaTxt"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/costoPowerUpTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/costo_5"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tipoUnitaTxt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole48"
+        app:layout_constraintStart_toEndOf="@+id/costoPowerUpTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole48"
+        app:layout_constraintStart_toEndOf="@+id/costoTxt"
+        app:layout_constraintTop_toBottomOf="@+id/usatoTxt"
+        tools:ignore="ImageContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#09E3A5"
+    tools:context=".GameOverFragment">
+
+    <TextView
+        android:id="@+id/tecnologiaRaccoltaNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/tecnologiaRaccoltoTxt"
+        app:layout_constraintTop_toBottomOf="@+id/plasticaRaccoltoTxt" />
+
+    <TextView
+        android:id="@+id/risultatiTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/risultati"
+        android:textColor="#D50000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sopravvisutoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/sei_sopravvissuto"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/risultatiTxt" />
+
+    <TextView
+        android:id="@+id/tempoSopravvivenzaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/sopravvisutoTxt"
+        app:layout_constraintTop_toBottomOf="@+id/risultatiTxt" />
+
+    <TextView
+        android:id="@+id/vetroRaccoltoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/raccolto"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/frecciaImm2"
+        app:layout_constraintTop_toBottomOf="@+id/sopravvisutoTxt" />
+
+    <TextView
+        android:id="@+id/cartaRaccoltoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/raccolto"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/frecciaImm"
+        app:layout_constraintTop_toBottomOf="@+id/vetroRaccoltoTxt" />
+
+    <TextView
+        android:id="@+id/alluminioRaccoltoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/raccolto"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/frecciaImm7"
+        app:layout_constraintTop_toBottomOf="@+id/cartaRaccoltoTxt" />
+
+    <TextView
+        android:id="@+id/AcciaioRaccoltoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/raccolto"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/frecciaImm3"
+        app:layout_constraintTop_toBottomOf="@+id/alluminioRaccoltoTxt" />
+
+    <TextView
+        android:id="@+id/plasticaRaccoltoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/raccolto"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/frecciaImm5"
+        app:layout_constraintTop_toBottomOf="@+id/AcciaioRaccoltoTxt" />
+
+    <TextView
+        android:id="@+id/tecnologiaRaccoltoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/raccolto"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/frecciaImm6"
+        app:layout_constraintTop_toBottomOf="@+id/plasticaRaccoltoTxt" />
+
+    <TextView
+        android:id="@+id/vetroRaccoltoNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        app:layout_constraintStart_toEndOf="@+id/vetroRaccoltoTxt"
+        app:layout_constraintTop_toBottomOf="@+id/sopravvisutoTxt" />
+
+    <TextView
+        android:id="@+id/cartaRaccoltaNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toEndOf="@+id/cartaRaccoltoTxt"
+        app:layout_constraintTop_toBottomOf="@+id/vetroRaccoltoTxt" />
+
+    <TextView
+        android:id="@+id/alluminioRaccoltoNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toEndOf="@+id/alluminioRaccoltoTxt"
+        app:layout_constraintTop_toBottomOf="@+id/cartaRaccoltoTxt" />
+
+    <TextView
+        android:id="@+id/acciaioRaccoltoNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/AcciaioRaccoltoTxt"
+        app:layout_constraintTop_toBottomOf="@+id/alluminioRaccoltoTxt" />
+
+    <TextView
+        android:id="@+id/plasticaRaccoltaNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/plasticaRaccoltoTxt"
+        app:layout_constraintTop_toBottomOf="@+id/AcciaioRaccoltoTxt" />
+
+    <TextView
+        android:id="@+id/oggettiProdottiVetroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/oggetti_prodotti"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/vetroRaccoltoNumeroTxt"
+        app:layout_constraintTop_toBottomOf="@+id/sopravvisutoTxt" />
+
+    <TextView
+        android:id="@+id/oggettiProdottiCartaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/oggetti_prodotti"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/cartaRaccoltaNumeroTxt"
+        app:layout_constraintTop_toBottomOf="@+id/oggettiProdottiVetroTxt" />
+
+    <TextView
+        android:id="@+id/oggettiProdottiAlluminioTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/oggetti_prodotti"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/alluminioRaccoltoNumeroTxt"
+        app:layout_constraintTop_toBottomOf="@+id/oggettiProdottiCartaTxt" />
+
+    <TextView
+        android:id="@+id/oggettiProdottiPlasticaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/oggetti_prodotti"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/plasticaRaccoltaNumeroTxt"
+        app:layout_constraintTop_toBottomOf="@+id/oggettiProdottiAcciaioTxt" />
+
+    <TextView
+        android:id="@+id/oggettiProdottiTecnologiaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/oggetti_prodotti"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tecnologiaRaccoltaNumeroTxt"
+        app:layout_constraintTop_toBottomOf="@+id/oggettiProdottiPlasticaTxt" />
+
+    <TextView
+        android:id="@+id/oggettiProdottiAcciaioTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/oggetti_prodotti"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/acciaioRaccoltoNumeroTxt"
+        app:layout_constraintTop_toBottomOf="@+id/oggettiProdottiAlluminioTxt" />
+
+    <ImageView
+        android:id="@+id/vetroImm"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="90dp"
+        android:contentDescription="@string/immagine_vetro"
+        android:src="@drawable/vetro48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/cartaImm"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/immagine_carta"
+        android:src="@drawable/carta48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vetroImm"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/alluminioImm"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/immagine_alluminio"
+        android:src="@drawable/lattina48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartaImm" />
+
+    <ImageView
+        android:id="@+id/acciaioImm"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/immagine_acciaio"
+        android:src="@drawable/acciaio48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alluminioImm" />
+
+    <ImageView
+        android:id="@+id/plasticaImm"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/immagine_plastica"
+        android:src="@drawable/plastica48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acciaioImm" />
+
+    <ImageView
+        android:id="@+id/tecnologiaImm"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/immagine_tecnologia"
+        android:src="@drawable/tecnologico48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plasticaImm" />
+
+    <ImageView
+        android:id="@+id/frecciaImm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:contentDescription="@string/freccia"
+        android:rotation="180"
+        android:src="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toEndOf="@+id/cartaImm"
+        app:layout_constraintTop_toBottomOf="@+id/frecciaImm2" />
+
+    <ImageView
+        android:id="@+id/frecciaImm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="91dp"
+        android:contentDescription="@string/freccia"
+        android:rotation="180"
+        android:src="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toEndOf="@+id/vetroImm"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/frecciaImm3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/freccia"
+        android:rotation="180"
+        android:src="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toEndOf="@+id/acciaioImm"
+        app:layout_constraintTop_toBottomOf="@+id/frecciaImm7" />
+
+    <ImageView
+        android:id="@+id/frecciaImm5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/freccia"
+        android:rotation="180"
+        android:src="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toEndOf="@+id/plasticaImm"
+        app:layout_constraintTop_toBottomOf="@+id/frecciaImm3" />
+
+    <ImageView
+        android:id="@+id/frecciaImm6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/freccia"
+        android:rotation="180"
+        android:src="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toEndOf="@+id/tecnologiaImm"
+        app:layout_constraintTop_toBottomOf="@+id/frecciaImm5" />
+
+    <ImageView
+        android:id="@+id/frecciaImm7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:contentDescription="@string/freccia"
+        android:rotation="180"
+        android:src="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toEndOf="@+id/alluminioImm"
+        app:layout_constraintTop_toBottomOf="@+id/frecciaImm" />
+
+    <TextView
+        android:id="@+id/oggettiProdottiNumeroVetroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        app:layout_constraintStart_toEndOf="@+id/oggettiProdottiVetroTxt"
+        app:layout_constraintTop_toBottomOf="@+id/sopravvisutoTxt" />
+
+    <TextView
+        android:id="@+id/oggettiProdottiNumeroCartaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/oggettiProdottiCartaTxt"
+        app:layout_constraintTop_toBottomOf="@+id/oggettiProdottiVetroTxt" />
+
+    <TextView
+        android:id="@+id/oggettiProdottiNumeroAlluminioTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toEndOf="@+id/oggettiProdottiAlluminioTxt"
+        app:layout_constraintTop_toBottomOf="@+id/oggettiProdottiCartaTxt" />
+
+    <TextView
+        android:id="@+id/oggettiProdottiNumeroAcciaioTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/oggettiProdottiAcciaioTxt"
+        app:layout_constraintTop_toBottomOf="@+id/oggettiProdottiAlluminioTxt" />
+
+    <TextView
+        android:id="@+id/oggettiProdottiNumeroPlasticaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/oggettiProdottiPlasticaTxt"
+        app:layout_constraintTop_toBottomOf="@+id/oggettiProdottiAcciaioTxt" />
+
+    <TextView
+        android:id="@+id/oggettiProdottiNumeroTecnologiaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/oggettiProdottiTecnologiaTxt"
+        app:layout_constraintTop_toBottomOf="@+id/oggettiProdottiPlasticaTxt" />
+
+    <Button
+        android:id="@+id/buttonBackToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:onClick="returnToMenu"
+        android:text="@string/torna_al_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/condividiButton"
+        app:layout_constraintTop_toBottomOf="@+id/oggettiProdottiTecnologiaTxt" />
+
+    <ImageButton
+        android:id="@+id/condividiButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#09E3A5"
+        android:contentDescription="@string/condividi_risultati"
+        android:contextClickable="true"
+        android:soundEffectsEnabled="true"
+        android:src="@drawable/ic_baseline_share_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tecnologiaRaccoltoTxt" />
+
+    <TextView
+        android:id="@+id/timeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/sopravvisutoTxt"
+        app:layout_constraintTop_toBottomOf="@+id/risultatiTxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

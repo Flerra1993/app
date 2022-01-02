@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--XML BOTTOM NAV BAR-->
+    <item
+        android:id="@+id/Gioca"
+        android:icon="@drawable/ic_baseline_play_arrow_24"
+        android:title="Gioca"/>
+    <item
+        android:id="@+id/Impostazioni"
+        android:icon="@drawable/ic_baseline_settings_applications_24"
+        android:title="Impostazioni"
+        />
+    <item
+        android:id="@+id/Profilo"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profilo"
+        />
+</menu>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11CCD3"
+    tools:context=".UpgradeCartaFragment">
+
+    <ImageView
+        android:id="@+id/unitaRicicloCartaImm"
+        android:layout_width="96dp"
+        android:layout_height="93dp"
+        android:contentDescription="@string/immagine_unita_riciclo_carta"
+        android:src="@drawable/industria_carta_96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/infoUnitaRicicloCartaBtn"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/informazioni_unita_riciclo_carta"
+        android:src="@drawable/icona_info"
+        app:layout_constraintStart_toEndOf="@+id/unitaRicicloCartaImm"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tipoUnitaRicicloCartaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/tipo_unita_carta"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lvlUpgradeCartaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/liv_upgrade"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipoUnitaRicicloCartaTxt" />
+
+    <TextView
+        android:id="@+id/lvlUsuraCartaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/liv_usura"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUpgradeCartaTxt" />
+
+    <TextView
+        android:id="@+id/totRiciclatiCartaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/totale_riciclati"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUsuraCartaTxt" />
+
+    <TextView
+        android:id="@+id/lvlUpgradeCartaNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/_1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lvlUpgradeCartaTxt"
+        app:layout_constraintTop_toBottomOf="@+id/tipoUnitaRicicloCartaTxt" />
+
+    <TextView
+        android:id="@+id/lvlUsuraCartaNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/_0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lvlUsuraCartaTxt"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUpgradeCartaTxt" />
+
+    <TextView
+        android:id="@+id/lvlUsuraMaxCartaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/_24"
+        android:textColor="#99292020"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lvlUsuraCartaNumeroTxt"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUpgradeCartaTxt" />
+
+    <TextView
+        android:id="@+id/totRiciclatiCartaNumeroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/_0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/totRiciclatiCartaTxt"
+        app:layout_constraintTop_toBottomOf="@+id/lvlUsuraCartaTxt"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/aumentaLvlUnitaCartaBtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="122dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#E53935"
+        android:backgroundTintMode="add"
+        android:onClick="onClick"
+        android:text="@string/upgrade_unit"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/totRiciclatiCartaTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/costoUpgradeCartaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/costo_4"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lvlUpgradeCartaNumeroTxt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/puntiRiciclaggioAcciaioImm"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="25dp"
+        android:background="#F6F3F3"
+        android:contentDescription="@string/punti_riciclaggio"
+        android:src="@drawable/pala48"
+        app:layout_constraintStart_toEndOf="@+id/costoUpgradeCartaTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/puntiRiciclaggiCartaImm3"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="2dp"
+        android:background="#F6F3F3"
+        android:contentDescription="@string/punti_riciclaggio"
+        android:src="@drawable/pala48"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/costoOggettoCarta2Txt"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloCarta2Btn"
+        tools:ignore="ImageContrastCheck"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/puntiRiciclaggiCartaImm4"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="2dp"
+        android:background="#F6F3F3"
+        android:contentDescription="@string/punti_riciclaggio"
+        android:src="@drawable/pala48"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/costoOggettoCarta3Txt"
+        app:layout_constraintTop_toTopOf="@+id/costoOggettoCarta3Txt"
+        tools:ignore="ImageContrastCheck"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/puntiRiciclaggiCartaImm2"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="2dp"
+        android:background="#F6F3F3"
+        android:contentDescription="@string/punti_riciclaggio"
+        android:src="@drawable/pala48"
+        app:layout_constraintStart_toEndOf="@+id/costoOggettoCarta1Txt"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloCarta1Btn"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/ricicloCarta1Btn"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#4A4040"
+        android:contentDescription="@string/crea_nuovo_oogetto_carta_1"
+        android:src="@drawable/sacchetto_carta_riciclo"
+        app:layout_constraintStart_toEndOf="@+id/aumentaLvlUnitaCartaBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/ricicloCarta2Btn"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#4A4040"
+        android:contentDescription="@string/crea_nuovo_oggetto_carta_2"
+        android:src="@drawable/giornale_carta_riciclo"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloCarta1Btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/ricicloCarta3Btn"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#4A4040"
+        android:contentDescription="@string/crea_nuovo_oggetto_carta_3"
+        android:src="@drawable/blocco_carta_riciclo"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloCarta2Btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/costoOggettoCarta1Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/costo_3"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/aumentaLvlUnitaCartaBtn"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloCarta1Btn" />
+
+    <TextView
+        android:id="@+id/costoOggettoCarta2Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/costo_5"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloCarta1Btn"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloCarta2Btn"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/costoOggettoCarta3Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/costo_8"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloCarta2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/ricicloCarta3Btn"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/ricavoRicicloOggettoCarta1Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:text="@string/ricavo_2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/aumentaLvlUnitaCartaBtn"
+        app:layout_constraintTop_toBottomOf="@+id/costoOggettoCarta1Txt" />
+
+    <TextView
+        android:id="@+id/ricavoRicicloOggettoCarta2Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:text="@string/ricavo_4"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloCarta1Btn"
+        app:layout_constraintTop_toBottomOf="@+id/costoOggettoCarta2Txt"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/ricavoRicicloOggettoCarta3Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:text="@string/ricavo_7"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloCarta2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/costoOggettoCarta3Txt"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/puntiSoleRicavoCarta1Imm"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole24"
+        app:layout_constraintStart_toEndOf="@+id/ricavoRicicloOggettoCarta1Txt"
+        app:layout_constraintTop_toBottomOf="@+id/puntiRiciclaggiCartaImm2"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/puntiSoleRicavoCarta2Imm"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole24"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricavoRicicloOggettoCarta2Txt"
+        app:layout_constraintTop_toBottomOf="@+id/puntiRiciclaggiCartaImm3"
+        tools:ignore="ImageContrastCheck"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/puntiSoleRicavoCarta3Imm"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="1dp"
+        android:contentDescription="@string/punti_sole"
+        android:src="@drawable/puntisole24"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricavoRicicloOggettoCarta3Txt"
+        app:layout_constraintTop_toBottomOf="@+id/puntiRiciclaggiCartaImm4"
+        tools:ignore="ImageContrastCheck"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/numeroOggettiCreatiCarta1Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/n_0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ricicloCarta1Btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numeroOggettiCreatiCarta2Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/n_0"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloCarta2Btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/numeroOggettiCreatiCarta3Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/n_0"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloCarta3Btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/informazioniCreazioneOggettoCarta1Btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#11CCD3"
+        android:contentDescription="@string/informazioni_creazione_nuovo_oggetto_carta_1"
+        android:src="@drawable/icona_info"
+        app:layout_constraintStart_toEndOf="@+id/ricicloCarta1Btn"
+        app:layout_constraintTop_toBottomOf="@+id/numeroOggettiCreatiCarta1Txt" />
+
+    <ImageButton
+        android:id="@+id/informazioniCreazioneOggettoCarta2Btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#11CCD3"
+        android:contentDescription="@string/informazioni_creazione_nuovo_oggetto_carta_2"
+        android:src="@drawable/icona_info"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloCarta2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/numeroOggettiCreatiCarta2Txt"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/informazioniCreazioneOggettoCarta3Btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#11CCD3"
+        android:contentDescription="@string/informazioni_creazione_nuova_carta_3"
+        android:src="@drawable/icona_info"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ricicloCarta3Btn"
+        app:layout_constraintTop_toBottomOf="@+id/numeroOggettiCreatiCarta3Txt"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tempoRiciclaggioCartaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totRiciclatiCartaTxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
